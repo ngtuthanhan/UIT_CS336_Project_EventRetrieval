@@ -23,7 +23,7 @@ docker exec -it mongodb_tiuday bash
 cd app/Dockerfile_mongo
 bash import_db.sh
 ```
-Open 3rd CLI (still open the remaining CLI), excute
+Open 3rd CLI (still open the remaining 2 CLIs), excute
 ```
 cd app/model
 python main.py
