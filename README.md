@@ -25,7 +25,7 @@ bash import_db.sh
 ```
 Open 3rd CLI (still open the remaining 2 CLIs), excute
 ```
-cd app/model
+cd model
 python main.py
 ```
 Wait for the model to load, then execute the query in vietnamese/ english text
