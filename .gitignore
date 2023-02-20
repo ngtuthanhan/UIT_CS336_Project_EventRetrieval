@@ -1,0 +1,6 @@
+model/index.npy
+model/features.npy
+data/ffmpeg
+data/keyframe
+data/video
+Dockerfile_mongo/keyframe.json

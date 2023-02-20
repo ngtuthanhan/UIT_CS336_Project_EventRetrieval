@@ -1,0 +1,42 @@
+<div id="content" class="content-custom">
+  <div class="wrapper">
+    {{#each courses}}
+    <div class="">
+      <input type="checkbox" id="myCheckbox_{{this._id}}"
+        video="{{this.video}}" frame="{{this.frame_id}}"/>
+      <label for="myCheckbox_{{this._id}}" class="label-checkbox">
+        <img
+          src="/keyframe/{{this.keyframe}}"
+          alt="{{this._id}}">
+        <div class="bottom-left">{{this.video}}</div>
+        <div class="bottom-right">{{this.frame_id}}</div>
+        <div class="top-right">
+          <a class="detail-form-btn" href="/KNN/{{this.keyframe}}">
+            <span>
+              KNN
+            </span>
+          </a>
+        </div>
+
+        <div class="top-left">
+          <a class="detail-form-btn" href="/Detail/{{this.keyframe}}">
+            <span>
+              Detail
+            </span>
+          </a>
+        </div>
+
+        <!-- <div class="top-left">
+          <button class="detail-form-btn" data-id="{{this.IDFrame}}"
+            data-toggle="modal"
+            data-target="#detail-modal">
+            <span>
+              Detail
+            </span>
+          </button>
+        </div> -->
+      </label>
+    </div>
+    {{/each}}
+  </div>
+</div>
