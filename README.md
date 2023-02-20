@@ -17,13 +17,13 @@ docker-compose up --build
 ```
 
 ### Step 3 - Import data to database and run model
-Open new CLI, excute
+Open new CLI (still open the remaining CLI), excute
 ```
 docker exec -it mongodb_tiuday bash
 cd app/Dockerfile_mongo
 bash import_db.sh
 ```
-Open 3rd CLI, excute
+Open 3rd CLI (still open the remaining CLI), excute
 ```
 cd app/model
 python main.py
